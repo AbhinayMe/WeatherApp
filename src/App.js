@@ -13,7 +13,7 @@ function App() {
   const handleSubmit = () => {
     if (token, location) {
       console.log('passing data')
-      fetch(`http://api.weatherapi.com/v1/current.json?key=${token}&q=${location}`)
+      fetch(`https://api.weatherapi.com/v1/current.json?key=${token}&q=${location}`)
         .then(res => res.json())
         .then(data => {
           if (data.current.temp_c) {
